@@ -1,0 +1,14 @@
+import Vue from 'vue';
+
+import 'mapbox-gl/dist/mapbox-gl.css';
+import './assets/style/app.css';
+
+import App from './App.vue';
+import router from './router';
+
+Vue.config.productionTip = false;
+
+new Vue({
+  router,
+  render: h => h(App),
+}).$mount('#app');
